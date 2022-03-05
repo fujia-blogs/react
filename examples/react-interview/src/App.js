@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useEffect, useLayoutEffect } from 'react';
+
 import './App.css';
+import Counter from './components/Counter';
 
 function App() {
+  useLayoutEffect(() => {
+    const greenSquare = document.querySelector('.square');
+    greenSquare.style.transform = 'translate(-50%, -50%)';
+    greenSquare.style.left = '50%';
+    greenSquare.style.top = '50%';
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="square" />
+      <Counter />
     </div>
   );
 }
