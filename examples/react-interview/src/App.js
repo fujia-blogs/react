@@ -1,8 +1,8 @@
-import { useEffect, useLayoutEffect } from 'react';
+// import { useEffect, useLayoutEffect } from 'react';
 
-import './App.css';
-import Counter from './components/Counter';
-import SetStateDemo from './components/setStateDemo';
+// import './App.css';
+// import Counter from './components/Counter';
+// import SetStateDemo from './components/setStateDemo';
 
 function App() {
   // useLayoutEffect(() => {
@@ -13,10 +13,11 @@ function App() {
   // });
 
   return (
-    <div className="App">
+    <div>
       {/* <div className="square" /> */}
       {/* <Counter /> */}
-      <SetStateDemo />
+      {/* <SetStateDemo /> */}
+      hello world
     </div>
   );
 }
